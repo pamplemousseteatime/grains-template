@@ -10,10 +10,12 @@
                     <% page.services.types.each { type -> %>
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item">
+                          <a href="#${type.modal}" style="color: white;" data-toggle="modal">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa ${type.image} fa-stack-1x text-primary"></i>
                             </span>
+                          </a>
                             <h4>
                                 <strong>${type.name}</strong>
                             </h4>
